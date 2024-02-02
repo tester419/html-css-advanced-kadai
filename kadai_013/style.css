@@ -59,8 +59,11 @@ PC用のスタイル
     color: #0d0d0d;
   }
 
-  /* スマホ用ナビゲーションの非表示 */
-  #menu-sp, #nav-sp{
+  /* スマホ用ナビゲーションを非表示に */
+  #menu-sp{
+    display: none;
+  }
+  #nav-sp{
     display: none;
   }
 }
@@ -68,7 +71,8 @@ PC用のスタイル
 /*================
 スマホ用のスタイル 
 =================*/
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767px){
+  /* 横幅設定 */
   body{
     min-width: 375px;
     margin: 0;
@@ -104,14 +108,14 @@ PC用のスタイル
     right: 20px;
   }
 
-  /* ナビゲーションメニュー用ロゴ */
+  /* ナビゲーション用ロゴ */
   #logo-sp{
-    margin: 80px 0 30px 20px;
+    margin: 80px 0px 30px 20px;
   }
 
   #nav-sp > a{
     display: block;
-  } 
+  }
   #nav-sp > a:link{
     color: #fff;
   }
@@ -125,6 +129,7 @@ PC用のスタイル
   #nav-sp > a:active{
     color: #fff;
   }
+
   #nav-sp > .menu{
     text-decoration: none;
     display: block;
